@@ -10,7 +10,7 @@ public class Main{
 		b = sc.nextLong();
 		c = sc.nextLong();
 		
-		long ans = a * c * b % div;
+		long ans = (a * c % div) * (b % div) % div;
 		
 		System.out.println(ans);
 	}
